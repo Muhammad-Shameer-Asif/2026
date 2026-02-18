@@ -1,6 +1,0 @@
-hello shameer
-how are you 
-i am fine 
-what about you 
-are you okay 
-i am learning python
