@@ -1,15 +1,16 @@
-with open("example1.txt","r")as f:
-    chunk=""
-    for line in f:
-        for char in line:
-            if char =="\n":
-                continue
-            chunk=chunk+char
+with open("Example3.txt","a+")as file:
+    print("initial {}".format(file.tell()))
+    data=file.read()
+    if not data:
+        print("NO data bro sorry")
+    else:
+        print(data)
 
-            if len(chunk)==3:
-                print(chunk.replace(" ",""))
-                chunk=""
-    if chunk:
-        print(chunk)
-
-        # end program
+    file.seek(0,0)
+    print("\nnew {}".format(file.tell()))
+    data=file.read()
+    if not data:
+        print("NO data bro ")
+    else:
+        print(data)
+    print("end {}".format(file.tell()))
