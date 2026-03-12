@@ -14,5 +14,4 @@ def guess():
   if (int(num)!=int(comp_num)):
       guess()
       
-guess()      
-
+guess()   
